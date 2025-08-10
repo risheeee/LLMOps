@@ -57,10 +57,16 @@ spec:
           volumeMounts:
             - mountPath: /usr/share/elasticsearch/data
               name: elasticsearch-storage
+            - mountPath: /sys/fs/cgroup
+              name: cgroup
+              readOnly: true
       volumes:
         - name: elasticsearch-storage
           persistentVolumeClaim:
             claimName: elasticsearch-pvc
+        - name: cgroup
+          hostPath:
+            path: /sys/fs/cgroup
 ---
 apiVersion: v1
 kind: Service
