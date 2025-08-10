@@ -21,6 +21,13 @@ spec:
               value: http://elasticsearch:9200
             - name: NODE_OPTIONS
               value: "--max-old-space-size=512"
+            # Encryption keys to stop warnings & enable features
+            - name: XPACK_SECURITY_ENCRYPTIONKEY
+              value: "9e3f3db4b8e249f4a6b15f9a4e9cde43"
+            - name: XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY
+              value: "e045417b9a5c4f8cbfda871e5179d184"
+            - name: XPACK_REPORTING_ENCRYPTIONKEY
+              value: "d6f0dcedb4ac4fa3bb14d6a8e4fbb267"
           ports:
             - containerPort: 5601
           resources:
