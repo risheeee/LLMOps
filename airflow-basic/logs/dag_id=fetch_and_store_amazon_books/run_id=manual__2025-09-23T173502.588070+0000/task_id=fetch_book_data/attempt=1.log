@@ -1,0 +1,11 @@
+{"timestamp":"2025-09-23T17:35:06.365394","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T17:35:06.365971","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T17:35:06.678188Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:06.678597Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:06.679409Z","level":"info","event":"Current task name:fetch_book_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:06.679635Z","level":"info","event":"Dag name:fetch_and_store_amazon_books","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:07.602527Z","level":"info","event":"Failed to retrieve the page","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:07.669927","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-09-23T17:35:07.764198Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:07.764895Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:07.765284Z","level":"info","event":"Task operator:<Task(PythonOperator): fetch_book_data>","chan":"stdout","logger":"task"}

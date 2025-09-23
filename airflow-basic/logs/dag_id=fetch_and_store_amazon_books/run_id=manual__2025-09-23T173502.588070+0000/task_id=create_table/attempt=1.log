@@ -1,0 +1,15 @@
+{"timestamp":"2025-09-23T17:35:08.758931","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T17:35:08.759475","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T17:35:08.915278Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:08.916451Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:08.917401Z","level":"info","event":"Current task name:create_table","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:08.917782Z","level":"info","event":"Dag name:fetch_and_store_amazon_books","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:08.917666","level":"info","event":"Executing: \n    CREATE TABLE IF NOT EXISTS books (\n        id SERIAL PRIMARY KEY,\n        title TEXT NOT NULL,\n        authors TEXT,\n        price TEXT,\n        rating TEXT\n    );\n    ","logger":"airflow.task.operators.airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator"}
+{"timestamp":"2025-09-23T17:35:08.924275","level":"warning","event":"/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py:471: DeprecationWarning: Using Connection.get_connection_from_secrets from `airflow.models` is deprecated.Please use `get` on Connection from sdk(`airflow.sdk.Connection`) instead\n  warnings.warn(\n","logger":"py.warnings"}
+{"timestamp":"2025-09-23T17:35:09.022649","level":"warning","event":"empty cryptography key - values will not be stored encrypted.","logger":"airflow.models.crypto"}
+{"timestamp":"2025-09-23T17:35:09.024227","level":"info","event":"Connection Retrieved 'books_connection'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-09-23T17:35:09.025769","level":"info","event":"Connection Retrieved 'books_connection'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-09-23T17:35:09.029315","level":"info","event":"Running statement: \n    CREATE TABLE IF NOT EXISTS books (\n        id SERIAL PRIMARY KEY,\n        title TEXT NOT NULL,\n        authors TEXT,\n        price TEXT,\n        rating TEXT\n    );\n    , parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-09-23T17:35:09.066204Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:09.068046Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:35:09.068590Z","level":"info","event":"Task operator:<Task(SQLExecuteQueryOperator): create_table>","chan":"stdout","logger":"task"}
